@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="ArtAssignment.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>JustArt Gallery</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+             <asp:ImageButton ID="PageLogo" runat="server" Height="121px" ImageUrl="~/Properties/MasterLayout1.jpg" Width="193px" />
+                        
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+           
+        </div>
+    </form>
+</body>
+</html>
