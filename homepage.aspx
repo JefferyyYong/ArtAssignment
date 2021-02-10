@@ -1,16 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="ArtAssignment.homepage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="ArtAssignment.homepage" %>
 
-<!DOCTYPE html>
+<asp:Content ID="homepagecontent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            test
-        </div>
-    </form>
-</body>
-</html>
+    <div>
+    Hi testing
+</div>
+
+</asp:Content>

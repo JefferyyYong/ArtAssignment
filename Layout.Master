@@ -7,17 +7,58 @@
     <title>JustArt Gallery</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+  
+    <style type="text/css">
+        .footer-style1 {
+            height: 35px;
+        }
+         .footer-style2 {
+            padding-top:18px;
+        }
+         .page-style1 {
+            margin-left: 0.5px;
+        }
+        </style>
+  
 </head>
-<body>
+<body class="page-style1">
     <form id="form1" runat="server">
         
-        <div>
-             <asp:ImageButton ID="PageLogo" runat="server" Height="121px" ImageUrl="~/Properties/MasterLayout1.jpg" Width="193px" />
+        <div id="header">
+             <asp:ImageButton ID="PageLogo" runat="server" Height="121px" ImageUrl="~/Properties/MasterLayout1.jpg" Width="193px" OnClick="PageLogo_Click" PostBackUrl="~/homepage.aspx" />
                         
+             <br />
+            <div id="sitemapstyle" style="background-color:lightsteelblue">
+             <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="Medium" Height="20px" PathSeparator=" : ">
+                 <CurrentNodeStyle ForeColor="#333333" />
+                 <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+                 <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+                 <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+             </asp:SiteMapPath>
+            </div>
+
+            <div id="middlepagestyle">
+                <div id="contentplaceholderstyle">
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
              </asp:ContentPlaceHolder>
-           
+                </div>
+            </div>
+            </div>
+
+        <div id="footer" class="footer-style1">
+            <p style="background-color:lightsteelblue; display:flex; align-items:center; justify-content:center" class="footer-style2">
+                &nbsp;<asp:HyperLink ID="Facebook" runat="server" ImageUrl="~/Properties/FacebookIcon.png" NavigateUrl="https://en-gb.facebook.com/" ImageHeight="30px" ImageWidth="30px"></asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="Instagram" runat="server" ImageUrl="~/Properties/InstagramIcon.png" NavigateUrl="https://www.instagram.com/" ImageHeight="30px" ImageWidth="35px"></asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="Youtube" runat="server" ImageUrl="~/Properties/YoutubeIcon.png" NavigateUrl="https://www.youtube.com/" ImageHeight="30px" ImageWidth="30px"></asp:HyperLink>
+            </p>
         </div>
+        <div id="footer2">
+            <p style="background-color:lightsteelblue; display:flex; align-items:center; justify-content:center">
+                <span style="color: black; background-color:lightsteelblue;font-family:'Comic Sans MS'">
+                    ©Inter JustArt Gallery Systems 2020 - 2021 | Term of Policy</span></p>
+        </div>
+
+    
     </form>
 </body>
 </html>
