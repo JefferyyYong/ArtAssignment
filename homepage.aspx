@@ -2,8 +2,6 @@
 
 <asp:Content ID="homepagecontent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
 
-    <div>
-    Hi testing
-</div>
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Properties/Background.jpg" Height="600px" Width="1350px" />
 
 </asp:Content>
