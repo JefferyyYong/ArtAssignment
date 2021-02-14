@@ -8,11 +8,11 @@
         
         <div class="userSelection" >
             <label class="loginchoicebtn" style="width: 175px">
-            <asp:RadioButton ID="artistUser" runat="server" value="artistUser" Checked="true" TextAlign="Left" AutoPostBack="True" OnCheckedChanged="artistUser_CheckedChanged" />
+            <asp:RadioButton ID="artistUser" runat="server" value="artistUser" Checked="true" TextAlign="Left" AutoPostBack="True"  GroupName="userType" />
                 Artist
             </label>
             <label class="loginchoicebtn" style="width: 165px">
-            <asp:RadioButton ID="customerUser" runat="server" value="customerUser" Checked="false" OnCheckedChanged="customerUser_CheckedChanged" AutoPostBack="True"/>
+            <asp:RadioButton ID="customerUser" runat="server" value="customerUser" Checked="false" AutoPostBack="True" GroupName="userType" />
             Customer 
             </label>
         </div>
@@ -34,7 +34,7 @@
         </div>
         
         <div id="forgetPass" style="padding-top:8px">
-            <a href="login.aspx" style="color:white;text-decoration:none;color:white;font-size:14px;" >Forget Password</a>
+            <a href="forgetPassword.aspx" style="color:white;text-decoration:none;color:white;font-size:14px;" >Forget Password</a>
         </div>
 
     </div>

@@ -7,19 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace ArtAssignment
 {
-    public partial class register : System.Web.UI.Page
+    public partial class CustomerRegister : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void ArtistIcon_Click(object sender, ImageClickEventArgs e)
-        {
-
-        }
-
-        protected void CustomerIcon_Click(object sender, ImageClickEventArgs e)
+        protected void cRegisterBtn_Click(object sender, EventArgs e)
         {
 
         }

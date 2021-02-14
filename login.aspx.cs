@@ -15,20 +15,6 @@ namespace ArtAssignment
            
         }
 
-        protected void customerUser_CheckedChanged(object sender, EventArgs e)
-        {
-            if (customerUser.Checked.Equals(true))
-            {
-                artistUser.Checked = false;
-            }
-        }
 
-        protected void artistUser_CheckedChanged(object sender, EventArgs e)
-        {
-            if (artistUser.Checked.Equals(true))
-            {
-                customerUser.Checked = false;
-            }
-        }
     }
 }
