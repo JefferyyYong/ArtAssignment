@@ -21,7 +21,7 @@ namespace ArtAssignment
 
         protected void PageLogo_Click(object sender, ImageClickEventArgs e)
         {
-
+            
         }
     }
 }

@@ -30,7 +30,7 @@ namespace ArtAssignment
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ArtistIcon;
+        protected global::System.Web.UI.WebControls.ImageButton ArtistIcon;
 
         /// <summary>
         /// CustomerIcon control.
@@ -39,6 +39,6 @@ namespace ArtAssignment
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image CustomerIcon;
+        protected global::System.Web.UI.WebControls.ImageButton CustomerIcon;
     }
 }

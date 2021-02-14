@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="artistRegister.aspx" />
+    <Content Include="customerRegister.aspx" />
+    <Content Include="forgetPassword.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="login.aspx" />
     <Content Include="login.css" />
@@ -79,9 +82,31 @@
     <Content Include="Properties\MasterLayout1.jpg" />
     <Content Include="Properties\YoutubeIcon.png" />
     <Content Include="register.aspx" />
+    <Content Include="register.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="artistRegister.aspx.cs">
+      <DependentUpon>artistRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="artistRegister.aspx.designer.cs">
+      <DependentUpon>artistRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerRegister.aspx.cs">
+      <DependentUpon>customerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerRegister.aspx.designer.cs">
+      <DependentUpon>customerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPassword.aspx.cs">
+      <DependentUpon>forgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgetPassword.aspx.designer.cs">
+      <DependentUpon>forgetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
