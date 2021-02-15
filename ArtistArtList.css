@@ -1,0 +1,35 @@
+﻿.artListPg {
+    margin: auto;
+    width: 70%;
+    padding: 100px;
+    font-family: 'Metrophobic', 'Helvetica';
+}
+
+table {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-family: sans-serif;
+    background-color: violet;
+}
+
+th,
+td {
+    border: 1px solid pink;
+    padding: 30px 60px;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+tbody tr:hover {
+    background-color: lightskyblue;
+}
+
+
