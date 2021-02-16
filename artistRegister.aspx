@@ -84,7 +84,7 @@
 
             <tr>
                 <td>
-                    <asp:TextBox ID="aUserEmail" runat="server" CssClass="nametxt" placeholder="Eg: alex123@xxx.com"></asp:TextBox><span style="color:red">*</span>
+                    <asp:TextBox ID="aUserEmail" runat="server" CssClass="nametxt" placeholder="Eg: alex123@xxx.com" MaxLength="50"></asp:TextBox><span style="color:red">*</span>
                 </td>
             </tr>
 
@@ -137,6 +137,6 @@
             </tr>
         </table>
     </div>
-
+    
 
 </asp:Content>
