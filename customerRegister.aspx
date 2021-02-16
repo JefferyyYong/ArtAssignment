@@ -126,7 +126,7 @@
 
             <tr>
                 <td>
-                   <%-- <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password does not match" ControlToCompare="confirmPass" ForeColor="Red">*Password does not match</asp:CompareValidator> --%>
+                    <%-- <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password does not match" ControlToCompare="confirmPass" ForeColor="Red">*Password does not match</asp:CompareValidator> --%> 
                 </td>
             </tr>
 

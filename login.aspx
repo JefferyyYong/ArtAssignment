@@ -30,7 +30,7 @@
         </div>
         
         <div class="loginBtn">
-            <asp:Button ID="loginSubmitBtn" CssClass="loginSubmitBtnStyle"  runat="server" Text="Log In" OnClick="Page_Load" />
+            <asp:Button ID="loginSubmitBtn" CssClass="loginSubmitBtnStyle"  runat="server" Text="Log In" OnClick="loginSubmitBtn_Click"  />
         </div>
         
         <div id="forgetPass" style="padding-top:8px">

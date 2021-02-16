@@ -49,7 +49,7 @@ namespace ArtAssignment
                 }
                 catch(SqlException ex)
                 {
-                    this.Page.ClientScript.RegisterStartupScript(this.GetType(),"ex", "alert('The email is already register before. Please try again with another email!');", true);           
+                    this.Page.ClientScript.RegisterStartupScript(this.GetType(),"alert2", "alert('The email is already register before. Please try again with another email!');", true);           
                 }
             }
        }
