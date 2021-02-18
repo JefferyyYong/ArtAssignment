@@ -23,5 +23,23 @@ namespace ArtAssignment
         {
             
         }
+
+        protected void dMenu_Click(object sender, EventArgs e)
+        {
+            if(p1.Height == 24)
+            {
+                p1.Height = 72;
+                dMenu3.Visible = true;
+                dMenu4.Visible = true;
+            }
+            else
+            {
+                p1.Height = 24;
+                dMenu3.Visible = false;
+                dMenu4.Visible = false;
+            }
+        }
+
+        
     }
 }

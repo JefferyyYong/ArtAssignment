@@ -29,27 +29,32 @@ namespace ArtAssignment
                 gender = "Female";
             }
 
-            string query = "INSERT INTO Customer (cEmail, cFName, cLName, cGender, cPhoneNo, cPassword)" +
+
+            if (cPassword.Text == cComfirmPass.Text)
+            {
+
+                string query = "INSERT INTO Customer (cEmail, cFName, cLName, cGender, cPhoneNo, cPassword)" +
                             "VALUES ('" + cUserEmail.Text + "', '" + cFNameTxt.Text + "', '" + cLNameTxt.Text + "', '" + gender + "', '" + cPhoneNo.Text + "', '" + cPassword.Text + "')";
 
-            if (Page.IsValid)
-            {
-                try
+                if (Page.IsValid)
                 {
-                    using (var sqlconnection1 = new SqlConnection(constring))
+                    try
                     {
-                        using (var command = new SqlCommand(query, sqlconnection1))
+                        using (var sqlconnection1 = new SqlConnection(constring))
                         {
-                            sqlconnection1.Open();
-                            command.ExecuteNonQuery();
-                            sqlconnection1.Close();
+                            using (var command = new SqlCommand(query, sqlconnection1))
+                            {
+                                sqlconnection1.Open();
+                                command.ExecuteNonQuery();
+                                sqlconnection1.Close();
+                            }
                         }
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('The account is successfully registerd!');window.location ='homepage.aspx';", true);
                     }
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('The account is successfully registerd!');window.location ='homepage.aspx';", true);
-                }
-                catch (SqlException ex)
-                {
-                    this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert2", "alert('The email is already register before. Please try again with another email!');", true);
+                    catch (SqlException)
+                    {
+                        this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert2", "alert('The email is already register before. Please try again with another email!');", true);
+                    }
                 }
             }
             }

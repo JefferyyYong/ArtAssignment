@@ -29,30 +29,40 @@ namespace ArtAssignment
                 gender = "Female";
             }
 
-            string query = "INSERT INTO Artist (aEmail, aFName, aLName, aGender, aPhoneNo, aPassword)" +
-                            "VALUES ('" + aUserEmail.Text + "', '" + aFNameTxt.Text + "', '" + aLNameTxt.Text + "', '" + gender + "', '" + aPhoneNo.Text + "', '" + aPassword.Text + "')";
-
-            if (Page.IsValid)
+            if (aPassword.Text == aComfirmPass.Text)
             {
-                try
+
+
+                string query = "INSERT INTO Artist (aEmail, aFName, aLName, aGender, aPhoneNo, aPassword)" +
+                                "VALUES ('" + aUserEmail.Text + "', '" + aFNameTxt.Text + "', '" + aLNameTxt.Text + "', '" + gender + "', '" + aPhoneNo.Text + "', '" + aPassword.Text + "')";
+
+                if (Page.IsValid)
                 {
-                    using(var sqlconnection1 = new SqlConnection(constring))
+                    try
                     {
-                        using(var command =new SqlCommand(query,sqlconnection1))
+                        using (var sqlconnection1 = new SqlConnection(constring))
                         {
-                            sqlconnection1.Open();
-                            command.ExecuteNonQuery();
-                            sqlconnection1.Close();
+                            using (var command = new SqlCommand(query, sqlconnection1))
+                            {
+                                sqlconnection1.Open();
+                                command.ExecuteNonQuery();
+                                sqlconnection1.Close();
+                            }
                         }
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('The account is successfully registerd!');window.location ='homepage.aspx';", true);
                     }
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('The account is successfully registerd!');window.location ='homepage.aspx';", true);
-                }
-                catch(SqlException ex)
-                {
-                    this.Page.ClientScript.RegisterStartupScript(this.GetType(),"alert2", "alert('The email is already register before. Please try again with another email!');", true);           
+                    catch (SqlException)
+                    {
+                        this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert2", "alert('The email is already register before. Please try again with another email!');", true);
+                    }
                 }
             }
-       }
+            else
+            {
+                this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert3", "alert('The both password are not same, Please try again!');", true);
+            }
+       
+        }
 
     }
 }
