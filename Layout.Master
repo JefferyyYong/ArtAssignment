@@ -9,9 +9,26 @@
     </asp:ContentPlaceHolder>
   
     <style type="text/css">
-         .page-style1 {
+        .page-style1 {
             margin-left: 0.5px;
-            margin-right:0px;
+            margin-right: 0px;
+        }
+        .panel1{
+            position:absolute;
+            margin:auto;
+            left:1226px;
+            top:132px;
+            height:24px;
+            background-color:black;
+           
+        }
+        .dMenu1{
+            background-color:antiquewhite;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:500;
+        }
+        .dMenu1:hover{
+            background-color:palevioletred;
         }
         </style>
   
@@ -32,6 +49,12 @@
                 &nbsp;&nbsp;
                 (Contact Us)&nbsp; Email: <a href="mailto:info@justartgallery.com" style="text-decoration:none;color:white">Info@justArtGallery.com</a>&nbsp;&nbsp;&nbsp; Phone: 014-6038641
             </p>
+            <asp:Panel ID="p1" CssClass="panel1" runat="server" Width="120px">
+                 <asp:Button ID="dMenu" CssClass="dMenu1"  runat="server" Text="More" Width="124px" Height="24px" OnClick="dMenu_Click" />
+                 <asp:Button ID="dMenu3" runat="server" CssClass="dMenu1" Height="24px" Text="About Us" Width="124px" Visible="False" PostBackUrl="~/aboutUs.aspx"/>
+                 <asp:Button ID="dMenu4" runat="server" CssClass="dMenu1" Height="24px" Text="Services" Width="124px" Visible="False" PostBackUrl="~/servicePage.aspx"/>
+             </asp:Panel>
+          
 
             <div id="sitemapstyle" style="background-color:lightsteelblue;padding-top:5px;padding-bottom:5px;font-weight:300">
              &nbsp;
