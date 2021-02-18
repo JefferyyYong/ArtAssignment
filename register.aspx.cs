@@ -13,5 +13,15 @@ namespace ArtAssignment
         {
 
         }
+
+        protected void ArtistIcon_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void CustomerIcon_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }
