@@ -34,7 +34,8 @@ namespace ArtAssignment
                     if (userPassword.Text == dtrUser["aPassword"].ToString())
                     {
                         dtrUser.Close();
-                        sqlConnection1.Close();
+                        sqlConnection1.Close();             
+                        
                         Response.Redirect("~/homepage.aspx");
                     }
                     else

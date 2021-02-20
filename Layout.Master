@@ -39,10 +39,10 @@
         <div id="header">
              <asp:ImageButton ID="PageLogo" runat="server" Height="121px" ImageUrl="~/Properties/MasterLayout1.jpg" Width="258px" OnClick="PageLogo_Click" PostBackUrl="~/homepage.aspx" />
                  
-                 <div id="userlabel" style="float:right;margin-top:0px;font-size:larger;padding-top:100px;padding-right:10px">
-                     <asp:Label ID="lblLogin" runat="server" style="font-size:medium;color:black;" ></asp:Label>
+                 <div id="userlabel" style="float:right;margin:auto;font-size:larger;padding-top:100px;padding-right:10px">
+                     <asp:Label ID="lblLogin" runat="server" style="font-size:medium;color:black;margin:auto" ></asp:Label>
                      <span style="font-weight:600">&nbsp;|</span>
-                     <asp:Label ID="lblRegister" runat="server" style="font-size:medium"></asp:Label>         
+                     <asp:Label ID="lblRegister" runat="server" style="font-size:medium;margin:auto"></asp:Label>         
                  </div> 
              <br />     
             <p style="background-color:black;margin-top:0px;margin-bottom:0px;color:white;padding-top:2px;padding-bottom:2px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;";>

@@ -66,7 +66,7 @@
 
             <tr>
                 <td>
-                    <asp:TextBox ID="aPhoneNo" CssClass="nametxt" runat="server" MaxLength="11" placeholder="Eg:0123456789" ></asp:TextBox>
+                    <asp:TextBox ID="aPhoneNo" CssClass="nametxt" runat="server" MaxLength="11" TextMode="Number" placeholder="Eg:0123456789" ></asp:TextBox>
                 </td>
             </tr>
 
