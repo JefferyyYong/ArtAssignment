@@ -11,7 +11,7 @@ namespace ArtAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session("aEmail" != null)
+           
             {
 
                 lblLogin.Text = "<a href =\"login.aspx\" >Login</a>";
