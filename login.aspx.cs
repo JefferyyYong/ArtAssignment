@@ -35,7 +35,8 @@ namespace ArtAssignment
                     {
                         dtrUser.Close();
                         sqlConnection1.Close();
-                        Response.Redirect("~/homepage.aspx");
+                        Session["email"] = userEmail.Text;
+                        Response.Redirect("~/ArtistManageArt.aspx");
                     }
                     else
                     {

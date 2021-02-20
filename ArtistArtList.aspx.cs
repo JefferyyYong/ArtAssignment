@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace ArtAssignment
 {
@@ -11,7 +13,10 @@ namespace ArtAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string email = (string)(Session["email"]);
 
+            hfArtistEmail.Value = email;
         }
+
     }
 }

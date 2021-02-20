@@ -3,26 +3,37 @@
     margin: auto;
     width: 70%;
     padding: 50px;
-    font-family: 'Metrophobic','Helvetica';
+    font-family: 'Metrophobic';
 }
 
 .addArtTable {
     margin-left: 100px;
     margin-right: auto;
     margin-top: 20px;
-    width: 800px;
+    width: 70%;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-.uploadCol1{
-    width: 155px;
-    height:60px;
+.styleUpImg {
+    margin-left: 100px;
+}
+
+.uploadCol1 {
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+}
+
+.uploadCol2 {
+    width: 100px;
+    height: 60px;
 }
 
 .addArtCol1 {
+    font-size: 18px;
     width: 120px;
     height: 60px;
 }
@@ -54,7 +65,6 @@ input[type=text], textarea, input[type=date], .createArtStyle {
     width: 350px;
     height: 35px;
     margin-left: 0px;
-    font-family: 'Metrophobic','Helvetica';
     font-size: 15px;
 }
 

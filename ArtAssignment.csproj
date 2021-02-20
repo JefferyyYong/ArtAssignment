@@ -73,8 +73,10 @@
     <Content Include="App_Data\ArtGallery_log.ldf">
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
+    <Content Include="ArtistManageArt.css" />
     <Content Include="artistRegister.aspx" />
     <Content Include="customerRegister.aspx" />
+    <Content Include="ArtistEditArt.aspx" />
     <Content Include="forgetPassword.aspx" />
     <Content Include="ArtistAddArt.aspx" />
     <Content Include="ArtistAddArt.css" />
@@ -86,16 +88,21 @@
     <Content Include="Properties\AddImageIcon.png" />
     <Content Include="Properties\ArtistIcon.jpg" />
     <Content Include="Properties\BlueBackground.jpg" />
+    <Content Include="Properties\CreateIcon.png" />
     <Content Include="Properties\CustomerIcon.png" />
+    <Content Include="Properties\ListIcon.png" />
     <Content Include="Properties\LoginBackground.png" />
     <Content Include="Properties\Background.jpg" />
     <Content Include="Properties\FacebookIcon.png" />
     <Content Include="Properties\InstagramIcon.png" />
     <Content Include="Properties\MasterLayout1.jpg" />
+    <Content Include="Properties\PaleBlue.jpg" />
     <Content Include="Properties\YoutubeIcon.png" />
     <Content Include="register.aspx" />
     <Content Include="register.css" />
+    <Content Include="ArtistEditArt.css" />
     <Content Include="Web.config" />
+    <Content Include="ArtistManageArt.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="artistRegister.aspx.cs">
@@ -111,6 +118,13 @@
     </Compile>
     <Compile Include="customerRegister.aspx.designer.cs">
       <DependentUpon>customerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistEditArt.aspx.cs">
+      <DependentUpon>ArtistEditArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistEditArt.aspx.designer.cs">
+      <DependentUpon>ArtistEditArt.aspx</DependentUpon>
     </Compile>
     <Compile Include="forgetPassword.aspx.cs">
       <DependentUpon>forgetPassword.aspx</DependentUpon>
@@ -161,6 +175,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistManageArt.aspx.cs">
+      <DependentUpon>ArtistManageArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistManageArt.aspx.designer.cs">
+      <DependentUpon>ArtistManageArt.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
