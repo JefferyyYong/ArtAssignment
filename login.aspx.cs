@@ -33,10 +33,12 @@ namespace ArtAssignment
                 {
                     if (userPassword.Text == dtrUser["aPassword"].ToString())
                     {
+                        Session["name"] = dtrUser["aFName"].ToString();
                         dtrUser.Close();
-                        sqlConnection1.Close();             
-                        
-                        Response.Redirect("~/homepage.aspx");
+                        sqlConnection1.Close();
+                        Session["email"] = userEmail.Text;
+                        Session["type"] = "artist";
+                        Response.Redirect("~/ArtistManageArt.aspx");
                     }
                     else
                     {
@@ -65,9 +67,12 @@ namespace ArtAssignment
                 {
                     if (userPassword.Text == dtrUser["cPassword"].ToString())
                     {
+                        Session["name"] = dtrUser["cFName"].ToString();
                         dtrUser.Close();
                         sqlConnection1.Close();
-                        Response.Redirect("~/forgetPassword.aspx");
+                        Session["email"] = userEmail.Text;
+                        Session["type"] = "customer";
+                        Response.Redirect("~/homepage.aspx");
                     }
                     else
                     {

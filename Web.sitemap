@@ -12,5 +12,12 @@
     <siteMapNode url="customerRegister.aspx" title="Customer Register"  description="CustomerRegisterpage"/>
       </siteMapNode>
     
+  <siteMapNode url="ArtistManageArt.aspx" title="Manage Art"  description="ManageArt">
+	  <siteMapNode url="ArtistAddArt.aspx" title="Create New Art"  description="CreateArt"/>
+	    <siteMapNode url="ArtistArtList.aspx" title="Art List"  description="ArtList">
+	      <siteMapNode url="ArtistEditArt.aspx" title="Edit Art"  description="EditArt"/>
+	    </siteMapNode>
+	 </siteMapNode>  
+
   </siteMapNode>
 </siteMap>

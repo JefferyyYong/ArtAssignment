@@ -21,12 +21,12 @@
 
         <div class="loginInput">
             <label style="color:white;font-size:18px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Email</label>
-            <asp:TextBox ID="userEmail" runat="server" CssClass="inputField" required=""></asp:TextBox>
+            <asp:TextBox ID="userEmail" runat="server" CssClass="inputField"></asp:TextBox>
         </div>
 
         <div class="loginInput">
             <label style="color:white;font-size:18px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Password</label>
-            <asp:TextBox ID="userPassword" runat="server" CssClass="inputField" TextMode="Password" required=""></asp:TextBox>
+            <asp:TextBox ID="userPassword" runat="server" CssClass="inputField" TextMode="Password" ></asp:TextBox>
         </div>
         
         <div class="loginBtn">

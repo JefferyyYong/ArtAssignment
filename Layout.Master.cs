@@ -11,11 +11,27 @@ namespace ArtAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            string email = (string)(Session["email"]);
+            string name = (string)(Session["name"]);
+            string type = (string)(Session["type"]);
+            if (!IsPostBack)
             {
 
-                lblLogin.Text = "<a href =\"login.aspx\" >Login</a>";
-                lblRegister.Text = "<a href =\"register.aspx\">Register</a>";
+                if (type == "artist")
+                {
+                    lblLogin.Text = "<a href =\"logout.aspx\" >Logout</a>";
+                    lblRegister.Text = "<a href =\"aboutUs.aspx\">" + name + "</a>";
+                }
+                else if (type == "customer")
+                {
+                    lblLogin.Text = "<a href =\"logout.aspx\" >Logout</a>";
+                    lblRegister.Text = "<a href =\"aboutUs.aspx\">" + name + "</a>";
+                }
+                else
+                {
+                    lblLogin.Text = "<a href =\"login.aspx\" >Login</a>";
+                    lblRegister.Text = "<a href =\"register.aspx\">Register</a>";
+                }
             }
         }
 
