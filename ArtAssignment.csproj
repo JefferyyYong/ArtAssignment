@@ -72,12 +72,21 @@
     <Content Include="App_Data\ArtGallery_log.ldf">
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
+    <Content Include="ArtistAddArt.aspx" />
+    <Content Include="ArtistAddArt.css" />
+    <Content Include="ArtistArtList.aspx" />
+    <Content Include="ArtistArtList.css" />
+    <Content Include="ArtistEditArt.aspx" />
+    <Content Include="ArtistEditArt.css" />
+    <Content Include="ArtistManageArt.aspx" />
+    <Content Include="ArtistManageArt.css" />
     <Content Include="artistRegister.aspx" />
     <Content Include="customerRegister.aspx" />
     <Content Include="forgetPassword.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="login.aspx" />
     <Content Include="login.css" />
+    <Content Include="logout.aspx" />
     <Content Include="Properties\ArtistIcon.jpg" />
     <Content Include="Properties\CustomerIcon.png" />
     <Content Include="Properties\LoginBackground.png" />
@@ -98,6 +107,34 @@
     </Compile>
     <Compile Include="aboutUs.aspx.designer.cs">
       <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistAddArt.aspx.cs">
+      <DependentUpon>ArtistAddArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistAddArt.aspx.designer.cs">
+      <DependentUpon>ArtistAddArt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistArtList.aspx.cs">
+      <DependentUpon>ArtistArtList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistArtList.aspx.designer.cs">
+      <DependentUpon>ArtistArtList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistEditArt.aspx.cs">
+      <DependentUpon>ArtistEditArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistEditArt.aspx.designer.cs">
+      <DependentUpon>ArtistEditArt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistManageArt.aspx.cs">
+      <DependentUpon>ArtistManageArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistManageArt.aspx.designer.cs">
+      <DependentUpon>ArtistManageArt.aspx</DependentUpon>
     </Compile>
     <Compile Include="artistRegister.aspx.cs">
       <DependentUpon>artistRegister.aspx</DependentUpon>
@@ -141,6 +178,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
@@ -168,6 +212,7 @@
     </None>
     <Content Include="Web.sitemap" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
